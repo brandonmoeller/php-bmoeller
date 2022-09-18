@@ -10,17 +10,17 @@
 // $socialimageoverride = "/images/subsite/socialimage.png"; - This overrides the $socialimagesitewide, which overrides the default image optimized for social media sharing.
 //
 // CHANGE THESE FOUR
-$title = "Documentation and Tutorials"; 
-$metadesc = "This section helps explain how this website works."; // docs meta description.
-$site = "docs"; 
-$page = "docs-home"; 
+$title = "docs/jokes-db Title"; 
+$metadesc = ""; // docs/jokes-db meta description.
+$site = "docs/jokes-db"; 
+$page = "docs/jokes-db-home"; 
 // Optional Overrides - leave them empty if not using them.
 $titleoverride = "";
 $socialimageoverride = "";
 require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php'); // This calls the main functions file, which calls the site functions file and the header.
 ?>
 
-<h1>Documentation and Tutorials</h1>
-<p>A good place to start.</p>
+<!-- Add Page Content Here -->
+<p>docs/jokes-db</p>
 
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php') ?>

@@ -20,6 +20,8 @@ function getSiteFunction()
       return '/includes/homepage/functions.php';
 		case 'docs':
 			return '/includes/docs/functions.php';
+		case 'docs/jokes-db':
+			return '/includes/docs/jokes-db/functions.php';
 		// PLACEHOLDER
     default:
       return null; // needs a better default return perhaps
