@@ -18,7 +18,7 @@ function getSiteFunction()
       return '/includes/subsite/functions.php';
     case 'homepage':
       return '/includes/homepage/functions.php';
-      // PLACEHOLDER
+		// PLACEHOLDER
     default:
       return null; // needs a better default return perhaps
   }
@@ -70,7 +70,7 @@ function the_metadesc()
   if ($GLOBALS['metadesc']) {
     echo '<meta name="description" content="' . $GLOBALS['metadesc'] . '">' . PHP_EOL;
   } else {
-    echo $GLOBALS['description'] . PHP_EOL;
+    echo '<meta name="description" content="' . $GLOBALS['description'] . '">' . PHP_EOL;
   }
 }
 

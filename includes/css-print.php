@@ -8,6 +8,5 @@
 //
 // Stash them in /css/ ... or elsewhere.
 //
-// See /css/print-blank.css, which is blank.
-// 
-?>
+// See /css/style-print.css, which is blank.
+//

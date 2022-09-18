@@ -8,6 +8,8 @@
 //
 // Stash them in /js/homepage/ ... or elsewhere.
 //
-// See /js/homepage/blank.js, which is blank.
+// Sample reference: <!-- <script src="/js/homepage/site.js?v=20220228"></script> -->
+//
+// See /js/homepage/site.js, which is blank.
 // 
 ?>
