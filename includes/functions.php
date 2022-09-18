@@ -18,6 +18,8 @@ function getSiteFunction()
       return '/includes/subsite/functions.php';
     case 'homepage':
       return '/includes/homepage/functions.php';
+		case 'docs':
+			return '/includes/docs/functions.php';
 		// PLACEHOLDER
     default:
       return null; // needs a better default return perhaps
