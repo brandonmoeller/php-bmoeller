@@ -8,7 +8,7 @@
 $sitename = "brandonmoeller.com"; // Change to the name of your website. Used in <title>.
 $siteurl = "https://brandonmoeller.com"; // Change to your website URL. Used in social media functions. No '/' at the end, please.
 $description = "Brandon Moeller is a freelance writer and web developer located near Houston, Texas."; // Used in meta description functions.
-$socialimage = "/images/social-image.webp"; // 1200 width x 603 height in pixels; used in social media meta functions.
+$socialimage = ""; // 1200 width x 603 height in pixels; used in social media meta functions.
 //
 // Include the site-specific functions first.
 function getSiteFunction()

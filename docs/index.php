@@ -1,22 +1,12 @@
 <?php
-// Keep some or all of these notes below for further reference.
-// Available variables you can use on this page include:
-// $title = ""; - This is the page title. Should only be a few words. See /includes/functions.php for rest of templated title.
-// $metadesc = ""; - This is a meta description. It should be the best sentence or two from the page.
-// $site = "homepage"; - Used in function files to determine CSS, JS, etc.
-// $page = "homepage-home"; - Each page needs its own unique ID, declared in one place, here. Format directory-directory-filename... Front pages need "-home."
-// Optional Overrides
-// $titleoverride = ""; - If you want to override the templated title ( $title | Bauer College of Business at UH ) on this page only, use this in addition to $title. But you still need to set $title. 
-// $socialimageoverride = "/images/subsite/socialimage.png"; - This overrides the $socialimagesitewide, which overrides the default image optimized for social media sharing.
-//
-// CHANGE THESE FOUR
-$title = "Documentation and Tutorials"; 
-$metadesc = "This section helps explain how this website works."; // docs meta description.
-$site = "docs"; 
-$page = "docs-home"; 
+// CHANGE THESE VARIABLES - learn more at /docs/template/
+$title = "Documentation and Tutorials"; // Title of this docs page.
+$metadesc = "This section helps explain how this website works."; // The meta description for this docs page.
+$site = "docs"; // All pages within the docs site share this.
+$page = "docs-home"; // Unique value for this page on the docs site.
 // Optional Overrides - leave them empty if not using them.
-$titleoverride = "";
-$socialimageoverride = "";
+$titleoverride = ""; // Define something other than $title | $sitename (see above and /includes/functions.php)
+$socialimageoverride = ""; // Define something unique for this page. (see /includes/PLACEHOLDER/functions.php and /includes/functions.php)
 require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php'); // This calls the main functions file, which calls the site functions file and the header.
 ?>
 
