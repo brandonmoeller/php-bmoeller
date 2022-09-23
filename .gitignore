@@ -57,3 +57,6 @@ wp-config.php
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+
+# Database Connection Files
+includes/docs/jokes-db/include-db-connect.php
