@@ -1,6 +1,6 @@
 <?php
 
-require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/docs/jokes-db/include-db-connect.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/lab/jokes-db/include-db-connect.php');
 
 $keywordfromform = $_GET["keyword"];
 // echo $keywordfromform;

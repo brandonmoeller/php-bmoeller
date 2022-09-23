@@ -59,4 +59,4 @@ wp-config.php
 #/wp-content/themes
 
 # Database Connection Files
-includes/docs/jokes-db/include-db-connect.php
+includes/lab/jokes-db/include-db-connect.php

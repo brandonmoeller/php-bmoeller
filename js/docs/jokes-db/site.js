@@ -1,1 +1,0 @@
-// JavaScript Document for docs/jokes-db site

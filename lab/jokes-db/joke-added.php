@@ -14,7 +14,7 @@ $headerbackground = "";
 
 <?php
 
-require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/docs/jokes-db/include-db-connect.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/lab/jokes-db/include-db-connect.php');
 
 $new_joke_question = $_GET["newjoke"];
 $new_joke_answer = $_GET["newanswer"];
@@ -25,7 +25,7 @@ $sql = "INSERT INTO Jokes_table (JokeID, Joke_question, Joke_answer) VALUES (NUL
 
 $result = $mysqli->query($sql);
 
-require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/docs/jokes-db/include-search-all-jokes.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/lab/jokes-db/include-search-all-jokes.php');
 
 ?>
 
