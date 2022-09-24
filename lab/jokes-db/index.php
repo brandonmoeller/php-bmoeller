@@ -9,27 +9,65 @@ $titleoverride = ""; // Define something other than $title | $sitename (see abov
 $socialimageoverride = ""; // Define something unique for this page. (see /includes/lab/jokes-db/functions.php and /includes/functions.php)
 require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php'); // This calls the main functions file, which calls the site functions file and the header.
 ?>
-<p>Connecting to a database and displaying its data.</p>
 
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/lab/jokes-db/include-db-connect.php');
 // require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/lab/jokes-db/include-search-all-jokes.php');
 ?>
 
-<form action="/includes/lab/jokes-db/include-search-jokes-for-keyword.php">
-  <label for="keyword">Please enter a keyword to search for:</label>
-  <input type="text" id="keyword" name="keyword"><br>
-  <input type="submit" value="Submit">
-</form> 
+<!-- Form builder : https://bootsnipp.com/forms -->
+<form class="form-horizontal" action="/includes/lab/jokes-db/include-search-jokes-for-keyword.php">
+  <fieldset>
+    <!-- Form Name -->
+    <legend>Search for a joke in the database</legend>
+    <!-- Search input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="keyword">Search Input</label>
+      <div class="col-md-5">
+        <input id="keyword" name="keyword" type="search" placeholder="e.g. chicken" class="form-control input-md" required="">
+        <p class="help-block">Enter a word to search for in the joke table</p>
+      </div>
+    </div>
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="submit"></label>
+      <div class="col-md-4">
+        <button id="submit" name="submit" class="btn btn-primary">Search</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
 <div class="spacer medium"></div>
-<hr>
-<div class="spacer medium"></div>
-<form action="/includes/lab/jokes-db/include-add-joke.php">
-  <label for="newjoke">Please enter a new joke here:</label>
-  <input type="text" id="newjoke" name="newjoke"><br>
-  <label for="newanswer">Please enter the answer to your new joke here:</label>
-  <input type="text" id="newanswer" name="newanswer"><br>
-  <input type="submit" value="Submit">
-</form> 
+<!-- <hr>
+<div class="spacer medium"></div> -->
+<form class="form-horizontal" action="/includes/lab/jokes-db/include-add-joke.php">
+  <fieldset>
+    <!-- Form Name -->
+    <legend>Add a Joke</legend>
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="newjoke">New Joke</label>
+      <div class="col-md-5">
+        <input id="newjoke" name="newjoke" type="text" placeholder="" class="form-control input-md">
+        <span class="help-block">Enter the first half of your joke.</span>
+      </div>
+    </div>
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="newanswer">New Answer</label>
+      <div class="col-md-5">
+        <input id="newanswer" name="newanswer" type="text" placeholder="" class="form-control input-md">
+        <span class="help-block">Enter the second half of your joke.</span>
+      </div>
+    </div>
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="submit"></label>
+      <div class="col-md-4">
+        <button id="submit" name="submit" class="btn btn-primary">Add a New Joke</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
 
 <?php
 // require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/lab/jokes-db/include-search-jokes-for-keyword.php');
