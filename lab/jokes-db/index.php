@@ -19,7 +19,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php'); // This cal
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
     <p>&nbsp;</p>
     <!-- Form builder : https://bootsnipp.com/forms -->
-    <form class="form-horizontal" action="/includes/lab/jokes-db/include-search-jokes-for-keyword.php">
+    <form class="form-horizontal" action="/lab/jokes-db/search-keyword-results.php">
       <fieldset>
         <!-- Form Name -->
         <!-- <legend>Search for a joke in the database</legend> -->

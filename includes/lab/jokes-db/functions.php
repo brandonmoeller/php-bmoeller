@@ -20,6 +20,8 @@ function the_sitecss()
     echo '  <!-- Optional theme -->' . PHP_EOL;
     echo '  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->' . PHP_EOL;
     echo '  <link rel="stylesheet" href="/css/lab/jokes-db/main.css?version=1.0">' . PHP_EOL;
+    echo '  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">' . PHP_EOL;
+    echo '  <link rel="stylesheet" href="/resources/demos/style.css">' . PHP_EOL;
   } else {
     echo '  <!-- Site-specific stylesheet goes here - configurable in site functions.php-->' . PHP_EOL;
   }
