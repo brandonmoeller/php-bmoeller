@@ -12,6 +12,5 @@
 //
 // See /js/lab/jokes-db/site.js, which is blank.
 //
-?> 
-<!-- Bootstrap 3.3.7 - Latest compiled and minified JavaScript -->
+?><!-- Bootstrap 3.3.7 - Latest compiled and minified JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

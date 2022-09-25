@@ -10,3 +10,5 @@
   <?php the_socialsharingmeta(); ?>
 </head>
 <body>
+<!-- Begin overall container for Bootstrap 3.3.7 -->
+<div class="container">
