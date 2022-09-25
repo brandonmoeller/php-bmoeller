@@ -1,9 +1,9 @@
 <?php
 // CHANGE THESE VARIABLES - learn more at /docs/template/
-$title = "Database Examples"; // Title of this lab/jokes-db page.
-$metadesc = "Database examples."; // The meta description for this lab/jokes-db page.
+$title = "Keyword search results"; // Title of this lab/jokes-db page.
+$metadesc = "Keyword search results."; // The meta description for this lab/jokes-db page.
 $site = "lab/jokes-db"; // All pages within the lab/jokes-db site share this.
-$page = "lab/jokes-db-home"; // Unique value for this page on the lab/jokes-db site. 
+$page = "lab/jokes-db-search-keyword-results"; // Unique value for this page on the lab/jokes-db site. 
 // Optional Overrides - leave them empty if not using them.
 $titleoverride = ""; // Define something other than $title | $sitename (see above and /includes/functions.php)
 $socialimageoverride = ""; // Define something unique for this page. (see /includes/lab/jokes-db/functions.php and /includes/functions.php)
