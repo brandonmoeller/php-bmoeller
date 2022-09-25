@@ -14,60 +14,72 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php'); // This cal
 // require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/lab/jokes-db/include-search-all-jokes.php');
 ?>
 
-<!-- Form builder : https://bootsnipp.com/forms -->
-<form class="form-horizontal" action="/includes/lab/jokes-db/include-search-jokes-for-keyword.php">
-  <fieldset>
-    <!-- Form Name -->
-    <legend>Search for a joke in the database</legend>
-    <!-- Search input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="keyword">Search Input</label>
-      <div class="col-md-5">
-        <input id="keyword" name="keyword" type="search" placeholder="e.g. chicken" class="form-control input-md" required="">
-        <p class="help-block">Enter a word to search for in the joke table</p>
+<div style="width: 70%; padding-left:50px;">
+  <h1>Search for a Joke in the Database</h1>
+  <!-- Form builder : https://bootsnipp.com/forms -->
+  <form class="form-horizontal" action="/includes/lab/jokes-db/include-search-jokes-for-keyword.php">
+    <fieldset>
+      <!-- Form Name -->
+      <!-- <legend>Search for a joke in the database</legend> -->
+      <!-- Search input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="keyword">Search Input</label>
+        <div class="col-md-5">
+          <input id="keyword" name="keyword" type="search" placeholder="e.g. chicken" class="form-control input-md" required="">
+          <p class="help-block">Enter a word to search for in the joke table</p>
+        </div>
       </div>
-    </div>
-    <!-- Button -->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="submit"></label>
-      <div class="col-md-4">
-        <button id="submit" name="submit" class="btn btn-primary">Search</button>
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="submit"></label>
+        <div class="col-md-4">
+          <button id="submit" name="submit" class="btn btn-primary">Search</button>
+        </div>
       </div>
-    </div>
-  </fieldset>
-</form>
-<div class="spacer medium"></div>
-<!-- <hr>
+    </fieldset>
+  </form>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="width: 70%; padding-left:50px;">
+  <!-- <hr>
 <div class="spacer medium"></div> -->
-<form class="form-horizontal" action="/includes/lab/jokes-db/include-add-joke.php">
-  <fieldset>
-    <!-- Form Name -->
-    <legend>Add a Joke</legend>
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="newjoke">New Joke</label>
-      <div class="col-md-5">
-        <input id="newjoke" name="newjoke" type="text" placeholder="" class="form-control input-md">
-        <span class="help-block">Enter the first half of your joke.</span>
+  <h1>Add a Joke</h1>
+  <form class="form-horizontal" action="/includes/lab/jokes-db/include-add-joke.php">
+    <fieldset>
+      <!-- Form Name -->
+      <!-- <legend>Add a Joke</legend> -->
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="newjoke">New Joke</label>
+        <div class="col-md-5">
+          <input id="newjoke" name="newjoke" type="text" placeholder="" class="form-control input-md">
+          <span class="help-block">Enter the first half of your joke.</span>
+        </div>
       </div>
-    </div>
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="newanswer">New Answer</label>
-      <div class="col-md-5">
-        <input id="newanswer" name="newanswer" type="text" placeholder="" class="form-control input-md">
-        <span class="help-block">Enter the second half of your joke.</span>
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="newanswer">New Answer</label>
+        <div class="col-md-5">
+          <input id="newanswer" name="newanswer" type="text" placeholder="" class="form-control input-md">
+          <span class="help-block">Enter the second half of your joke.</span>
+        </div>
       </div>
-    </div>
-    <!-- Button -->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="submit"></label>
-      <div class="col-md-4">
-        <button id="submit" name="submit" class="btn btn-primary">Add a New Joke</button>
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="submit"></label>
+        <div class="col-md-4">
+          <button id="submit" name="submit" class="btn btn-primary">Add a New Joke</button>
+        </div>
       </div>
-    </div>
-  </fieldset>
-</form>
+    </fieldset>
+  </form>
+</div>
 
 <?php
 // require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/lab/jokes-db/include-search-jokes-for-keyword.php');
