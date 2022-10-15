@@ -24,6 +24,8 @@ function getSiteFunction()
 			return '/includes/lab/jokes-db/functions.php';
 		case 'lab':
 			return '/includes/lab/functions.php';
+		case 'lab/oop':
+			return '/includes/lab/oop/functions.php';
 		// PLACEHOLDER
     default:
       return null; // needs a better default return perhaps
