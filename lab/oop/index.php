@@ -377,10 +377,196 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php'); // This cal
 // echo "<br>"; 
 // echo $class->prefixName("Jane Doe");
 
+// 
+//
+//
+
+// PHP OOP Interfaces
+// Following along at: https://www.w3schools.com/php/php_oop_interfaces.asp
+
+// Interfaces cannot have properties, while abstract classes can.
+// All interface methods must be public, while abstract class methods is public or protected.
+// All methods in an interface are abstract, so they cannot be implemented in code and the abstract keyword is not necessary
+// Classes can implement an interface while inheriting from another class at the same time
+
+// interface Animal {
+//   public function makeSound();
+// }
+
+// class Cat implements Animal { 
+//   public function makeSound() { 
+//     echo "Meow";
+//   }  
+// }
+
+// $animal = new Cat();
+// $animal->makeSound();
+
+//
+
+// // Interface definition
+// interface Animal {
+//   public function makeSound();
+// }
+
+// // Class definitions
+// class Cat implements Animal {
+//   public function makeSound() {
+//     echo "Meow<br>" . PHP_EOL;
+//   }
+// }
+
+// class Dog implements Animal {
+//   public function makeSound() {
+//     echo "Bark<br>" . PHP_EOL;
+//   }
+// }
+
+// class Mouse implements Animal {
+//   public function makeSound() {
+//     echo "Squeak<br>" . PHP_EOL;
+//   }
+// }
+
+// // Create a list of animals
+// $cat = new Cat();
+// $dog = new Dog();
+// $mouse = new Mouse();
+// $animals = array($cat, $dog, $mouse);
+
+// // Tell the animals to make a sound
+// foreach($animals as $animal) {
+//   $animal->makeSound();
+// }
+
+//
+//
+//
+
+// PHP OOP What are Traits? 
+// Following along here: https://www.w3schools.com/php/php_oop_traits.asp
+
+// trait TraitName
+// {
+//   // some code ...
+// }
+
+// class MyClass
+// {
+//   use TraitName;
+// }
+
+//
+
+// trait message1
+// {
+//   public function msg1()
+//   {
+//     echo "OOP is fun! ";
+//   }
+// }
+
+// class Welcome { 
+//   use message1;
+// }
+
+// $obj = new Welcome();
+// $obj->msg1();
+
+//
+
+// trait message1 {
+//   public function msg1() {
+//     echo "OOP is fun! ";
+//   }
+// }
+
+// trait message2 {
+//   public function msg2() {
+//     echo "OOP reduces code duplication!";
+//   }
+// }
+
+// class Welcome {
+//   use message1;
+// }
+
+// class Welcome2 {
+//   use message1, message2;
+// }
+
+// $obj = new Welcome();
+// $obj->msg1();
+// echo "<br>";
+
+// $obj2 = new Welcome2();
+// $obj2->msg1();
+// echo "<br>";
+// $obj2->msg2();
+
+//
+//
+//
+
+// PHP OOP Static Methods
+// Following along at: https://www.w3schools.com/php/php_oop_static_methods.asp
+
+// class ClassName {
+//   public static function staticMethod() {
+//     echo "Hello World!";
+//   }
+// }
+
+// ClassName::staticMethod();
 
 
 
+// class greeting {
+//   public static function welcome() {
+//     echo "Hello World!";
+//   }
+// }
 
+// // Call static method
+// greeting::welcome();
+
+
+// class greeting {
+//   public static function welcome() {
+//     echo "Hello World!";
+//   }
+
+//   public function __construct() {
+//     self::welcome();
+//   }
+// }
+
+// new greeting();
+
+// Call static method
+// greeting::welcome();
+
+class greeting
+{
+  public static function welcome()
+  {
+    echo "Hello World! To you and All";
+  }
+}
+
+class SomeOtherClass
+{
+  public function message()
+  {
+    greeting::welcome();
+  }
+  // public function __construct()
+  // {
+  //   self::message();
+  // }
+}
+
+// new SomeOtherClass();
 
 
 
