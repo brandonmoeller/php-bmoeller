@@ -738,12 +738,93 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php'); // This cal
 // $iterator = new MyIterator(["a", "b", "c"]);
 // printIterable($iterator);
 
+//
+//
+//
+
+// Learn OOP PHP by building a complete website tutorial
+// Following along at https://www.eduonix.com/new_dashboard/learn-object-oriented-php-by-building-a-complete-website
+
+// $numbers = array(12, 24, 35, 21, 245); // an array
+// $numbers = [12, 24, 35, 21, 245]; // also an array
+
+// print_r($numbers);
+
+// echo $numbers[5]; // error
+
+// echo $numbers[4]; // 245
+
+// $ages = array(
+//   "John" => 35,
+//   "Mary" => 27,
+//   "Bob" => 55
+// );
+
+// echo $ages['Mary']; // 27
+
+// echo count($ages); // 3
+
+// echo '<br><br>';
+
+// array_pop($ages); // removes the last pair in the array
+
+// print_r($ages); // Only prints pairs for John and Mary
+
+// echo '<br><br>';
 
 
+// array_shift($ages); // removes the first pair in the array - only Mary remains ...
+
+// print_r($ages); // Only prints pairs for John and Mary
+
+// basic for loop. Set variable to 0. Run as long as less than 5. Increment by one each time.
+// for ($i = 0;$i < 5;$i++){
+//   echo $i;
+// }
+
+// while loop. Variable outside the loop. Echo each number add one; loop again.
+// $i = 0;
+// while($i <= 10){
+//   echo 'Number '.$i.'<br />';
+//   $i++;
+// }
+
+// $numbers = array(12, 24, 35, 21, 245);
+
+// // foreach loops are only used for arrays!
+// foreach ($numbers as $number) {
+//   echo 'This is number ' . $number . '<br>';
+// }
+
+
+// // This is an associative array:
+// $ages = array(
+//   "John" => 35,
+//   "Mary" => 27,
+//   "Bob" => 55
+// );
+
+// // foreach with an associative array:
+// foreach ($ages as $age) {
+//   echo $age . '<br>';
+// }
+
+// // This is an associative array:
+$ages = array(
+  "John" => 35,
+  "Mary" => 27,
+  "Bob" => 55
+);
+
+// foreach with an associative array:
+foreach ($ages as $name => $age) {
+  echo $name . ' is ' . $age . ' years old<br>';
+}
 
 
 
 echo "<br><br><br><br>" . PHP_EOL;
+echo "<hr>" . PHP_EOL;
 echo "<h2>See more</h2>" . PHP_EOL;
 echo "<a href=\"/lab/oop/namespace.php\" title=\"Click here to visit namespace page\">Namespace</a>";
 
