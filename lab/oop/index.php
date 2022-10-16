@@ -519,7 +519,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php'); // This cal
 
 // ClassName::staticMethod();
 
-
+//
 
 // class greeting {
 //   public static function welcome() {
@@ -546,29 +546,206 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php'); // This cal
 // Call static method
 // greeting::welcome();
 
-class greeting
-{
-  public static function welcome()
-  {
-    echo "Hello World! To you and All";
-  }
-}
+// class greeting
+// {
+//   public static function welcome()
+//   {
+//     echo "Hello World! To you and All";
+//   }
+// }
 
-class SomeOtherClass
-{
-  public function message()
-  {
-    greeting::welcome();
-  }
-  // public function __construct()
-  // {
-  //   self::message();
-  // }
-}
+// class SomeOtherClass
+// {
+//   public function message()
+//   {
+//     greeting::welcome();
+//   }
+//   public function __construct()
+//   {
+//     self::message();
+//   }
+// }
 
 // new SomeOtherClass();
 
+// Calling a static method from a child class by using the parent keyword inside the child class.
 
+// class domain {
+//   protected static function getWebsiteName() {
+//     return "W3Schools.com";
+//   }
+// }
+
+// class domainW3 extends domain {
+//   public $websiteName;
+//   public function __construct() {
+//     $this->websiteName = parent::getWebsiteName();
+//   }
+// }
+
+// $domainW3 = new domainW3;
+// echo $domainW3 -> websiteName;
+
+//
+//
+//
+
+// PHP OOP Static Properties
+// Following along at: https://www.w3schools.com/php/php_oop_static_properties.asp
+
+// Static properties can be called directly - without creating an instance of a class.
+
+// class ClassName {
+//   public static $staticProp = "Huh";
+// }
+
+// echo ClassName::$staticProp;
+
+// echo "<br><br><br>";
+
+// class pi {
+//   public static $value = 3.14159;
+// }
+
+// // Get static property
+// echo pi::$value;
+
+//
+
+// class pi {
+//   public static $value=3.14159;
+//   public function staticValue() {
+//     return self::$value;
+//   }
+// }
+
+// $pi = new pi();
+// echo $pi->staticValue();
+
+//
+
+// class pi {
+//   public static $value=3.14159;
+// }
+
+// class x extends pi {
+//   public function xStatic() {
+//     return parent::$value;
+//   }
+// }
+
+// // Get value of static property directly via child class
+// echo x::$value;
+
+// echo "<br><br><br>";
+
+// // or get value of static property via xStatic() method
+// $x = new x();
+// echo $x->xStatic();
+
+//
+//
+//
+
+// PHP OOP Namespaces
+// Following along here: https://www.w3schools.com/php/php_namespaces.asp
+
+// Syntax: Declare a namespace
+
+// namespace Html;
+
+// namespace Won't work here because it isn't the first thing in a blank php document.
+
+// Please turn your hymnals to page 2, /lab/oop/namespace.php
+
+// See bottom of this document for link there. 
+
+//
+//
+//
+
+// PHP OOP Iterables
+// Following along at: https://www.w3schools.com/php/php_iterables.asp
+
+// Example: Use an iterable function argument:
+
+// function printIterable(iterable $myIterable) {
+//   foreach($myIterable as $item) {
+//     echo $item;
+//   }
+// }
+
+// $arr = ["a", "b", "c"];
+// printIterable($arr);
+
+// // Example: Return an iterable:
+
+// function getIterable():iterable {
+//   return ["a", "b", "c"];
+// }
+
+// $myIterable = getIterable();
+// foreach($myIterable as $item) {
+//   echo $item;
+// }
+
+// All arrays are iterables.
+
+
+// Create an Iterator
+// class MyIterator implements Iterator {
+//   private $items = [];
+//   private $pointer = 0;
+
+//   public function __construct($items) {
+//     // array_values() makes sure that the keys are numbers
+//     $this->items = array_values($items);
+//   }
+
+//   public function current() {
+//     return $this->items[$this->pointer];
+//   }
+
+//   public function key() {
+//     return $this->pointer;
+//   }
+
+//   // vs code throws an error here
+//   public function next() {
+//     $this->pointer++;
+//   }
+
+//   // vs code throws an error here
+//   public function rewind() {
+//     $this->pointer = 0;
+//   }
+
+//   // vs code throws an error here
+//   public function valid() {
+//     // count() indicates how many items are in the list
+//     return $this->pointer < count($this->items);
+//   }
+// }
+
+// // A function that uses iterables
+// function printIterable(iterable $myIterable) {
+//   foreach($myIterable as $item) {
+//     echo $item;
+//   }
+// }
+
+// // Use the iterator as an iterable
+// $iterator = new MyIterator(["a", "b", "c"]);
+// printIterable($iterator);
+
+
+
+
+
+
+echo "<br><br><br><br>" . PHP_EOL;
+echo "<h2>See more</h2>" . PHP_EOL;
+echo "<a href=\"/lab/oop/namespace.php\" title=\"Click here to visit namespace page\">Namespace</a>";
 
 ?>
 
