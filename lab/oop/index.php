@@ -738,6 +738,13 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php'); // This cal
 // $iterator = new MyIterator(["a", "b", "c"]);
 // printIterable($iterator);
 
+// Link to Namespace page, where a little more is.
+
+// echo "<br><br><br><br>" . PHP_EOL;
+// echo "<hr>" . PHP_EOL;
+// echo "<h2>See more</h2>" . PHP_EOL;
+// echo "<a href=\"/lab/oop/namespace.php\" title=\"Click here to visit namespace page\">Namespace</a>";
+
 //
 //
 //
@@ -809,24 +816,39 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php'); // This cal
 //   echo $age . '<br>';
 // }
 
-// // This is an associative array:
-$ages = array(
-  "John" => 35,
-  "Mary" => 27,
-  "Bob" => 55
-);
+// // // This is an associative array:
+// $ages = array(
+//   "John" => 35,
+//   "Mary" => 27,
+//   "Bob" => 55
+// );
 
-// foreach with an associative array:
-foreach ($ages as $name => $age) {
-  echo $name . ' is ' . $age . ' years old<br>';
-}
+// // foreach with an associative array:
+// foreach ($ages as $name => $age) {
+//   echo $name . ' is ' . $age . ' years old<br>';
+// }
+
+//
+//
+//
+
+// OK. Actually, let's skip to ...
+//
+// Learn OOP PHP by building a complete website tutorial
+// Section 6: PHP Project - Part 1
+// Following along at: https://www.eduonix.com/new_dashboard/learn-object-oriented-php-by-building-a-complete-website
+// We are building an app. It is called Shareboard. 
+// Share resources to articles with registration, login. 
+// MVC OOP PHP.
+
+// MODEL -> Updates -> VIEW -> Sees -> USER -> Uses -> CONTROLLER -> Manipulates -> MODEL
+
+// Added new directory /lab/shareboard/ for this project.
+
+// Need to commit this; left off at 17:51 on video for Section 6: PHP Project - Part 1
 
 
 
-echo "<br><br><br><br>" . PHP_EOL;
-echo "<hr>" . PHP_EOL;
-echo "<h2>See more</h2>" . PHP_EOL;
-echo "<a href=\"/lab/oop/namespace.php\" title=\"Click here to visit namespace page\">Namespace</a>";
 
 ?>
 
