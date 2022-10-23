@@ -60,3 +60,4 @@ wp-config.php
 
 # Database Connection Files
 includes/lab/jokes-db/include-db-connect.php
+lab/shareboard/config.php
