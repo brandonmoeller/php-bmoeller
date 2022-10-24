@@ -26,7 +26,6 @@ abstract class Model{
           break;
           default:
           $type = PDO::PARAM_STR;
-
       }
     }
     $this->stmt->bindValue($param, $value, $type);
@@ -34,6 +33,10 @@ abstract class Model{
 
   public function execute(){
     $this->stmt->execute();
+  }
+
+  public function resultSet(){
+    $this->execute();
     return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 }
