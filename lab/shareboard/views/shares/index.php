@@ -2,7 +2,7 @@
   <a class="btn btn-info btn-share" href="<?php echo ROOT_PATH; ?>shares/add">Share Something</a>
   <div class="clearfix"></div>
   <?php foreach ($viewmodel as $item) :; ?>
-    <div class="card text-bg-secondary mb-3" style="max-width: 18rem; float: left; margin:10px;">
+    <div class="card text-bg-secondary mb-3" style="max-width: 18rem; float: left; margin-right:10px;">
       <div class="card-header">
         <h3><?php echo $item['title']; ?></h3>
       </div>
